@@ -1,11 +1,6 @@
 # TaskZoryBoard
 
-#PyrmaidInAlphabet
-
-using System;
-
-namespace AlphaPyramid
-{
+#PyrmaidInAlphabet in C#
     class Program
     {
         static void Main(string[] args)
@@ -15,27 +10,28 @@ namespace AlphaPyramid
             for (i = 1; i <= 4; i++)
             {
                 for (j = 4; j >= i; j--)
+                {
                     Console.Write(" ");
+                }
                 for (l = 1; l <= i; l++)
+                {
                     Console.Write(ch++);
-                ch--;
+                    ch--;
+                }
                 for (m = 1; m < i; m++)
+                {
                     Console.Write(--ch);
-                Console.Write("\n");
-                ch = 'A';
+                    Console.Write("\n");
+                    ch = 'A';
+                }
             }
+
         }
-
     }
-}
 
-#Removing Duplicate String
+#Removing Duplicate String in c#
 
-using System;
-
-namespace DuplicateString
-{
-    class Program
+class Program
     {
         static void dupstr(String str)
         {
@@ -58,5 +54,4 @@ namespace DuplicateString
             dupstr(orgstr);
             Console.ReadLine();
         }
-    }
 }
